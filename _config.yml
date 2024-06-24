@@ -21,7 +21,7 @@ repository               : "ericjmei/ericjmei.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "headshot.jpg"
+  avatar           : "Headshot.jpg"
   name             : "Eric J. Mei"
   pronouns         : "he/him"  
   bio              : "PhD student at the University of Washington Department of Atmospheric Sciences"
