@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student at the UW Department of Atmospheric Sciences advised by [Alex Turner](https://alexjturner.github.io/index.html) and [Greg Hakim](https://www.linkedin.com/in/greg-hakim-42945611/). I use data-driven emulators of chemistry-climate models to investigate the production and removal rates of methane. I focus mostly on the paleo record, a period where in-situ observations of atmospheric composition are not available. More broadly, I am interested in the role of atmospheric chemistry in modulating the abundance and lifetime of short-lived climate forcers.
+I am a PhD student at the UW Department of Atmospheric Sciences advised by [Alex Turner](https://alexjturner.github.io/index.html) and [Greg Hakim](https://www.linkedin.com/in/greg-hakim-42945611/). I am interested in the role of atmospheric chemistry in modulating the abundance and lifetime of short-lived climate forcers. In my research, I use data-driven emulators of chemistry-climate models to investigate the production and removal rates of methane. I focus mostly on the paleo record, a period where in-situ observations of atmospheric composition are not available. 
 
 Beyond research, I enjoy stereotypical Seattlite hobbies such as rock climbing, skiing (poorly), and running.
 
