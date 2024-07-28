@@ -2,7 +2,7 @@
 title: "Virus stabilization with enhanced porous superabsorbent polymer (PSAP) beads for diagnostics and surveillance"
 collection: publications
 permalink: /publication/2022-10-13-Virus-stabilization-with-enhanced-porous-superabsorbent-polymer-(PSAP)-beads-for-diagnostics-and-surveillance
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: ''
 date: 2022-10-13
 venue: 'ACS ES&T Water'
 paperurl: 'https://pubs.acs.org/doi/full/10.1021/acsestwater.2c00239'
