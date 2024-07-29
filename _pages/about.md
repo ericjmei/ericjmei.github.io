@@ -14,11 +14,3 @@ Beyond research, I enjoy stereotypical Seattleite hobbies such as rock climbing,
 Past projects
 ======
 I received a bachelor's and master's degree in environmental engineering from Georgia Tech. My previous research focused on air pollution, in which I investigated local concentrations of hazardous air pollutants and impacts of regional air pollution control regulations. 
-
-Air pollution accountability study
-------
-Air pollution has drastically improved in the Eastern US in the past decades, but it is difficult to attribute air quality improvements to regulations or other events. A report is forthcoming.
-
-Ethylene oxide measurement comparison
-------
-We worked with the Georgia EPD on this.
