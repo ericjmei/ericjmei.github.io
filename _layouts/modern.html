@@ -8,58 +8,48 @@ layout: compress
     {% include head.html %}
     {% include head/custom.html %}
   </head>
-  <body class="theme-modern">
-    <header class="modern-nav">
-      <div class="container modern-nav__inner">
-        <a class="brand" href="{{ base_path }}/">{{ site.title }}</a>
-        <nav class="modern-nav__links" aria-label="Primary">
-          <ul>
-            {% for link in site.data.navigation.main %}
-              {% if link.url contains 'http' or link.url contains 'mailto:' %}
-                {% assign domain = '' %}
-              {% else %}
-                {% assign domain = base_path %}
-              {% endif %}
-              <li class="{% if page.url == link.url %}is-active{% endif %}">
-                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </nav>
+<body class="theme-modern">
+  <div class="layout">
+    <aside class="sidenav" aria-label="Primary">
+      <div class="sidenav__brand">
+        <a href="{{ base_path }}/">{{ site.title }}</a>
+        <p>{{ site.description }}</p>
+      </div>
+      <nav class="sidenav__nav">
+        <ul>
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' or link.url contains 'mailto:' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <li class="{% if page.url == link.url %}is-active{% endif %}">
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="sidenav__meta">
         {% if site.author.email %}
-          <a class="pill-button" href="mailto:{{ site.author.email }}">Contact</a>
+          <a class="chip" href="mailto:{{ site.author.email }}">Email</a>
+        {% endif %}
+        {% if site.author.googlescholar %}
+          <a class="chip" href="{{ site.author.googlescholar }}">Scholar</a>
+        {% endif %}
+        {% if site.author.github %}
+          <a class="chip" href="https://github.com/{{ site.author.github }}">GitHub</a>
+        {% endif %}
+        {% if site.author.linkedin %}
+          <a class="chip" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
         {% endif %}
       </div>
-    </header>
+    </aside>
 
-    <main class="modern-main container" role="main">
+    <main class="content" role="main">
       {{ content }}
     </main>
+  </div>
 
-    <footer class="modern-footer" id="contact">
-      <div class="container modern-footer__inner">
-        <div>
-          <p class="eyebrow">Stay connected</p>
-          <h3 class="footer__title">Let's talk about science and ideas.</h3>
-          <p class="footer__text">I welcome collaborations, questions about my work, and opportunities to learn from adjacent fields.</p>
-        </div>
-        <div class="modern-footer__links">
-          {% if site.author.email %}
-            <a href="mailto:{{ site.author.email }}">Email</a>
-          {% endif %}
-          {% if site.author.googlescholar %}
-            <a href="{{ site.author.googlescholar }}">Google Scholar</a>
-          {% endif %}
-          {% if site.author.github %}
-            <a href="https://github.com/{{ site.author.github }}">GitHub</a>
-          {% endif %}
-          {% if site.author.linkedin %}
-            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
-          {% endif %}
-        </div>
-      </div>
-    </footer>
-
-    {% include scripts.html %}
-  </body>
+  {% include scripts.html %}
+</body>
 </html>
