@@ -1,0 +1,65 @@
+---
+layout: compress
+---
+{% include base_path %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+  <body class="theme-modern">
+    <header class="modern-nav">
+      <div class="container modern-nav__inner">
+        <a class="brand" href="{{ base_path }}/">{{ site.title }}</a>
+        <nav class="modern-nav__links" aria-label="Primary">
+          <ul>
+            {% for link in site.data.navigation.main %}
+              {% if link.url contains 'http' or link.url contains 'mailto:' %}
+                {% assign domain = '' %}
+              {% else %}
+                {% assign domain = base_path %}
+              {% endif %}
+              <li class="{% if page.url == link.url %}is-active{% endif %}">
+                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+        {% if site.author.email %}
+          <a class="pill-button" href="mailto:{{ site.author.email }}">Contact</a>
+        {% endif %}
+      </div>
+    </header>
+
+    <main class="modern-main container" role="main">
+      {{ content }}
+    </main>
+
+    <footer class="modern-footer" id="contact">
+      <div class="container modern-footer__inner">
+        <div>
+          <p class="eyebrow">Stay connected</p>
+          <h3 class="footer__title">Let's talk about science and ideas.</h3>
+          <p class="footer__text">I welcome collaborations, questions about my work, and opportunities to learn from adjacent fields.</p>
+        </div>
+        <div class="modern-footer__links">
+          {% if site.author.email %}
+            <a href="mailto:{{ site.author.email }}">Email</a>
+          {% endif %}
+          {% if site.author.googlescholar %}
+            <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+          {% endif %}
+          {% if site.author.github %}
+            <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+          {% endif %}
+          {% if site.author.linkedin %}
+            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
+          {% endif %}
+        </div>
+      </div>
+    </footer>
+
+    {% include scripts.html %}
+  </body>
+</html>

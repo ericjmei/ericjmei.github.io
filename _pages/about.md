@@ -1,16 +1,57 @@
 ---
+layout: modern
 permalink: /
-title: "EJM research homepage"
-author_profile: true
+title: "About"
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a PhD student at the [UW Department of Atmospheric and Climate Science](https://atmos.uw.edu/) advised by [Alex Turner](https://alexjturner.github.io/index.html) and [Greg Hakim](https://www.linkedin.com/in/greg-hakim-42945611/). I am interested in the role of atmospheric chemistry in modulating the abundance and lifetime of short-lived climate forcers. In my research, I use data-driven emulators of chemistry-climate models to investigate the production and removal rates of methane. I focus mostly on past atmospheres before the instrumental record, in which in-situ observations of atmospheric composition are not available. 
+<section class="hero">
+  <div>
+    <span class="hero__meta">Atmospheric chemistry · Climate</span>
+    <h1 class="hero__headline">Hi, I'm Eric Mei.</h1>
+    <p class="hero__text">I'm a PhD student in the University of Washington Department of Atmospheric and Climate Science. I use data-driven emulators of chemistry-climate models to understand how chemistry shapes the abundance and lifetime of methane and other short-lived climate forcers, especially in pre-instrumental atmospheres.</p>
+    <div class="hero__actions">
+      <a class="button" href="{{ '/publications/' | relative_url }}">View publications</a>
+      <a class="button button--ghost" href="mailto:emei@uw.edu">Email me</a>
+    </div>
+    <div class="hero__links">
+      <a href="https://scholar.google.com/citations?user=y8gpQDoAAAAJ&hl=en">Google Scholar</a>
+      <a href="https://github.com/ericjmei">GitHub</a>
+      <a href="https://www.linkedin.com/in/eric-mei-595287173">LinkedIn</a>
+    </div>
+  </div>
+  <div class="hero__card">
+    <img src="{{ '/images/Headshot.jpg' | relative_url }}" alt="Photo of Eric J. Mei" class="hero__image">
+    <div class="hero__badge">PhD student · UW Atmospheric & Climate Science</div>
+  </div>
+</section>
 
-Beyond research, I enjoy stereotypical Seattleite hobbies such as rock climbing, skiing (poorly), and running.
+<div class="panel">
+  <div class="modern-section-header">
+    <span class="eyebrow">Current focus</span>
+    <p>Working with advisors <a href="https://alexjturner.github.io/index.html">Alex Turner</a> and <a href="https://www.linkedin.com/in/greg-hakim-42945611/">Greg Hakim</a>, I study how atmospheric chemistry modulates the climate system. My work uses emulators of chemistry-climate models to trace methane production and removal in the absence of direct observations.</p>
+  </div>
+  <div class="panel panel--grid">
+    <div class="card">
+      <h3>Atmospheric chemistry</h3>
+      <p>Examining how chemical pathways control the abundance and lifetime of short-lived climate forcers with an emphasis on methane.</p>
+    </div>
+    <div class="card">
+      <h3>Modeling & emulation</h3>
+      <p>Building data-driven emulators that make chemistry-climate model insights nimble enough for paleoclimate and scenario testing.</p>
+    </div>
+    <div class="card">
+      <h3>Collaboration</h3>
+      <p>Partnering with scientists across UW and beyond to connect atmospheric chemistry, paleoclimate evidence, and climate modeling.</p>
+    </div>
+  </div>
+</div>
 
-Past projects
-======
-I received a bachelor's and master's degree in environmental engineering from Georgia Tech. My previous research focused on air pollution, in which I investigated local concentrations of hazardous air pollutants and impacts of regional air pollution control regulations. 
+<div class="panel">
+  <div class="modern-section-header">
+    <span class="eyebrow">Background</span>
+    <p>I earned bachelor's and master's degrees in environmental engineering from Georgia Tech, where I studied air pollution—investigating local concentrations of hazardous air pollutants and the effects of regional control regulations. Outside of research you can usually find me climbing, skiing (poorly), or running around Seattle.</p>
+  </div>
+</div>
