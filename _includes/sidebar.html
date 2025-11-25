@@ -1,0 +1,38 @@
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="{{ '/images/Headshot.jpg' | relative_url }}" alt="{{ site.author.name }}" class="sidebar-avatar">
+    <h2 class="sidebar-name">{{ site.author.name }}</h2>
+    <p class="sidebar-bio">PhD Student<br>University of Washington</p>
+    <p class="sidebar-location"><i class="fas fa-map-marker-alt"></i> Seattle, WA</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#research" class="nav-link">Research</a>
+    <a href="#publications" class="nav-link">Publications</a>
+    <a href="#cv" class="nav-link">CV</a>
+  </nav>
+
+  <div class="sidebar-social">
+    {% if site.author.email %}
+    <a href="mailto:{{ site.author.email }}" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    {% endif %}
+    {% if site.author.googlescholar %}
+    <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+      <i class="fas fa-graduation-cap"></i>
+    </a>
+    {% endif %}
+    {% if site.author.github %}
+    <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    {% endif %}
+    {% if site.author.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    {% endif %}
+  </div>
+</div>

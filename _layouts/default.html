@@ -9,12 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  {% include header.html %}
-  <main class="content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </main>
-  {% include footer.html %}
+  <div class="site-container">
+    {% include sidebar.html %}
+    <main class="main-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+  </div>
 </body>
 </html>
