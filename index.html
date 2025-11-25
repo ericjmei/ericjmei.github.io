@@ -32,11 +32,20 @@ permalink: /
       <h2>Research</h2>
       <div class="research-description">
         <p>
-          My research focuses on understanding atmospheric chemistry and its role in climate. I develop and use data-driven emulators of chemistry-climate models to investigate the production and removal rates of methane and other short-lived climate forcers. A key aspect of my work involves studying past atmospheres before the instrumental record, where direct observations of atmospheric composition are unavailable.
+          Methane (CH₄) is a potent greenhouse gas with a global warming potential nearly 80 times that of CO₂ on a 20-year timescale. Understanding the drivers of past methane variability is critical for predicting its future trajectory and informing climate mitigation strategies. My PhD research focuses on reconstructing methane concentrations and variability in pre-industrial atmospheres using surrogate models (emulators) of coupled chemistry-climate dynamics.
+        </p>
+        <!-- <h3>Methane Variability in Past Atmospheres</h3>
+        <p>
+          Ice core methane varies by ±5% on multi-decadal to centennial timescales. Although this has often been attributed to slow changes in sources or external forcing, a simple methane budget model shows that random, short-timescale fluctuations in the source–sink imbalance naturally produce slower variability through integration by the methane lifetime and firn processes. Fast-varying components of the methane budget, including OH-related sink variability, may therefore play a larger role in past and present methane variability than commonly assumed.
+        </p> -->
+        <h3>Chemistry-Climate Emulators</h3>
+        <img src="{{ '/images/pub_7_fig.png' | relative_url }}" alt="Linear inverse model emulation of chemistry-climate dynamics" style="float: right; max-width: 45%; margin: 0 0 1rem 1.5rem; border-radius: 8px;">
+        <p> 
+          Chemistry–climate models (CCMs) capture complex interactions between dynamics, radiation, and atmospheric chemistry, but their computational cost limits how thoroughly they can be analyzed. We build data-driven linear inverse models (LIMs; see pub. <a href="#pub-7">[7]</a>) that emulate these CCMs and reproduce their key modes of variability at very low cost. By comparing LIM simulations to the underlying CCM, we find that predictable chemistry–climate modes, such as ENSO-driven changes in oxidants like OH and O<sub>3</sub>, are responsible for a large fraction of year-to-year chemical variability. These emulators can skillfully forecast chemical fields months to a year ahead and provide a fast, physically grounded way to test hypotheses about chemistry–climate coupling that would otherwise require thousands of hours of supercomputing time. 
         </p>
         <h3>Past Projects</h3>
         <p>
-          I received a bachelor's and master's degree in environmental engineering from Georgia Tech. My previous research focused on air pollution, in which I investigated local concentrations of hazardous air pollutants and impacts of regional air pollution control regulations.
+          I received a bachelor's and master's degree in environmental engineering from Georgia Tech. My previous research focused on air pollution, in which I investigated local concentrations of hazardous air pollutants (see pubs. <a href="#pub-2">[2]</a>, <a href="#pub-3">[3]</a>) and impacts of regional air pollution control regulations (see pubs. <a href="#pub-4">[4]</a>, <a href="#pub-5">[5]</a>, <a href="#pub-6">[6]</a>).
         </p>
       </div>
     </div>
@@ -55,7 +64,7 @@ permalink: /
       </p>
       
       <ol class="publications-list">
-        <li class="publication-item">
+        <li class="publication-item" id="pub-7">
           <div class="publication-title">
             <a href="https://doi.org/10.5194/acp-25-15033-2025" target="_blank" rel="noopener">
               Emulating chemistry-climate dynamics with a linear inverse model
@@ -72,7 +81,7 @@ permalink: /
           </span>
         </li>
 
-        <li class="publication-item">
+        <li class="publication-item" id="pub-6">
           <div class="publication-title">
             <a href="https://doi.org/10.1021/acs.est.4c12511" target="_blank" rel="noopener">
               Accountability assessment of source-specific impacts of regulations on emissions and air quality using positive matrix factorization
@@ -89,7 +98,7 @@ permalink: /
           </span>
         </li>
 
-        <li class="publication-item">
+        <li class="publication-item" id="pub-5">
           <div class="publication-title">
             <a href="https://doi.org/10.1016/j.atmosenv.2024.120947" target="_blank" rel="noopener">
               Multicity accountability and uncertainty assessment of the impacts of regulations on air quality in Atlanta
@@ -106,7 +115,7 @@ permalink: /
           </span>
         </li>
 
-        <li class="publication-item">
+        <li class="publication-item" id="pub-4">
           <div class="publication-title">
             <a href="https://doi.org/10.1021/acsestair.3c00034" target="_blank" rel="noopener">
               Impacts of Fuel Prices and Regulations on Electricity Generation Emissions and Urban Air Quality
@@ -123,7 +132,7 @@ permalink: /
           </span>
         </li>
 
-        <li class="publication-item">
+        <li class="publication-item" id="pub-3">
           <div class="publication-title">
             <a href="https://doi.org/10.1016/j.envpol.2023.122481" target="_blank" rel="noopener">
               Suitability of new and existing ambient ethylene oxide measurement techniques for cancer inhalation risk assessment
@@ -140,7 +149,7 @@ permalink: /
           </span>
         </li>
 
-        <li class="publication-item">
+        <li class="publication-item" id="pub-2">
           <div class="publication-title">
             <a href="https://www.sciencedirect.com/science/article/abs/pii/S004896972304809X" target="_blank" rel="noopener">
               Observations of the chemistry and concentrations of reactive Hg at locations with different ambient air chemistry
@@ -157,7 +166,7 @@ permalink: /
           </span>
         </li>
 
-        <li class="publication-item">
+        <li class="publication-item" id="pub-1">
           <div class="publication-title">
             <a href="https://pubs.acs.org/doi/full/10.1021/acsestwater.2c00239" target="_blank" rel="noopener">
               Virus stabilization with enhanced porous superabsorbent polymer (PSAP) beads for diagnostics and surveillance
