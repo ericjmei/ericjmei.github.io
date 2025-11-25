@@ -556,6 +556,11 @@ section:nth-child(even) {
     padding: 0 1.5rem;
   }
 
+  /* Publications - increase left padding on mobile to prevent overlap */
+  .publication-item {
+    padding-left: 3.5rem;
+  }
+
   .cv-embed {
     height: 600px;
   }
@@ -566,8 +571,9 @@ section:nth-child(even) {
     padding: 0 1rem;
   }
 
+  /* Publications - even more padding on very small screens */
   .publication-item {
-    padding: 1rem;
+    padding-left: 3.5rem;
   }
 
   .social-links a {
