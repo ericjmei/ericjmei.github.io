@@ -27,6 +27,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  background: #1a1a2e;
 }
 
 body {
@@ -387,8 +388,9 @@ section:nth-child(even) {
 }
 
 #cv .cv-wrapper {
-  width: 100%;
-  padding: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
 }
 
 #cv h2 {
