@@ -333,7 +333,7 @@ section:nth-child(even) {
 /* ===== Publications ===== */
 .publications-list {
   list-style: none;
-  counter-reset: publication-counter 8;
+  counter-reset: publication-counter 9; /* number of pubs + 1 */
 }
 
 .publication-item {
